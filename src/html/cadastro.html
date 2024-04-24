@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Happy Paws</title>
+    <link rel="stylesheet" href="/src/css/cadastro-styles.css">
+    <script src="/src/js/cadastro-script.js"></script>
+</head>
+<body>
+    <div class="background"></div>
+    <header>
+        <img src="/src/img/logo.png" class="logo">
+        <h1>HAPPY PAWS</h1>
+        <p>Faz o seu cadastro rapido e pratico</p>
+        <div class="input1">
+            <form>USUARIO</form>
+            <input type="text" placeholder=" Ex: Lucas18">
+        </div>
+        <div class="input1">
+            <form>EMAIL</form>
+            <input type="emil" placeholder=" Ex: LucasExemplo@gmail.com">
+        </div>
+        <div class="input2">
+            <form>SENHA</form>
+            <img src="/src/img/password.png" id="olho" onclick="toggleSenhaVisibility()" alt="Mostrar Senha">
+            <input type="password" id="senha" placeholder=" Ex: W342GMSyC">
+        </div>
+        <div class="button1">
+            <button>CADASTRAR</button>
+        </div>
+        <div class="button2" onclick="login()">
+            <button>JÁ TENHO LOGIN</button>
+        </div>
+    </header>
+</body>
+</html>
