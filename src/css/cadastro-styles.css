@@ -1,89 +1,24 @@
 html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(0,0,255);
     background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 50%);
 }
 
-header {
-    background-color: rgba(255, 255, 255, 0.755);
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60vh;
-    text-align: center;
-    border-radius: 25px;
-    border: 2.5px solid rgb(0, 0, 0);
-}
-
-.logo {
-    width: 125px;
-    border-radius: 100%;
-    margin-top: 20px;
-}
-
-h1 {
-    margin: 0;
-}
-
-p {
-    font-weight: bold;
-}
-
-form {
-    margin: 0;
-    text-align: left;
-    width: 275px;
-    margin-left: 16px;
-    font-weight: bold;
-}
-
-input {
-    width: 325px;
-    height: 30px;
-    border-radius: 10px;
-    font-size: 15px;
-}
-
-.input1 {
-    margin-bottom: 15px;
+.olho {
+    position: fixed;
+    right: 15px;
+    top: 401px;
+    width: 24px;
+    height: 24px;
 }
 
 #olho {
-    position: absolute;
-    right: 22px;
-    width: 25px;
-    top: 65.9vh;
+    border-radius: 100px;
+    right: 16px;
+    width: 24px;
+    top: 390px;
     cursor: pointer;
 }
 
-button {
-    height: 30px;
-    background-color: #00ffff;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-.button1 button{
-    margin-top: 20px;
-    width: 200px;
-}
-
-.button2 button{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    width: 275px;
-}
-
-.background {
-    position: fixed;
-    background: url('/src/img/background.png');
-    width: 100vw;
-    height: 100vh;
-    background-image: repeat;
-    background-size: cover;
+.input1,
+.input2{
+    margin-bottom: 15px;
 }

@@ -4,34 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Happy Paws</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/styles.css">
     <link rel="stylesheet" href="/src/css/login-styles.css">
     <script src="/src/js/login-script.js"></script>
 </head>
 <body>
-    <div class="square" id="square"></div>
     <div class="background"></div>
     <header>
-        <img src="/src/img/logo.png" class="logo">
-        <h1>HAPPY PAWS</h1>
-        <p>Faz o seu login e aproveita</p>
-        <div class="input1">
-            <form>USUARIO</form>
-            <input type="text" placeholder=" Nome seu usuario">
+        <div class="content">
+            <img src="/src/img/logo.png" class="logo">
+            <h1>HAPPY PAWS</h1>
+            <p>Faz o seu login e aproveita</p>
         </div>
-        <div class="input2">
-            <form>SENHA</form>
-            <input type="password" id="senha" placeholder=" Sua senha">
-            <img src="/src//img/password.png" id="olho" onclick="toggleSenhaVisibility()" alt="Mostrar Senha">
+        <div class="inputs">
+            <div class="input1">
+                <form>USUARIO</form>
+                <input type="text" placeholder="Nome seu usuario">
+            </div>
+            <div class="input2">
+                <form>SENHA</form>
+                <input type="password" id="senha" placeholder="Sua senha">
+                <div class="olho">
+                    <img src="/src//img/password.png" id="olho" onclick="toggleSenhaVisibility()">
+                </div>
+            </div>
         </div>
         <div class="link">
             <a href="/src/html/recuperar.html">Recuperar a senha</a>
         </div>
-        <div class="button1">
-            <button>LOGIN</button>
-        </div>
-        <div class="button2" onclick="cadastro()">
-            <button>FAZER CADASTRO</button>
+        <div class="buttons">
+            <div class="button1" onclick="logar()">
+                <button>LOGIN</button>
+            </div>
+            <div class="button2" onclick="cadastro()">
+                <button>FAZER CADASTRO</button>
+            </div>
         </div>
     </header>
+    <div class="fade"></div>
 </body>
 </html>
