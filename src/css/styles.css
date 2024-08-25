@@ -1,0 +1,48 @@
+body {
+    background-color: #80CC91;
+    font-family: "Alumni Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+	margin: 0;
+	padding: 0;
+}
+
+aside{
+    margin-top: -20px;
+    background-color: white;
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+}
+
+aside img {
+    margin-top: 15px;
+    margin-left: 12px;
+    height: 175px;
+    border-radius: 100%;
+}
+
+aside ul {
+    left: -35px;
+	font-weight: bolder;
+    position: fixed;
+    font-size: 18px;
+}
+
+aside li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+aside a {
+    text-decoration: none;
+    color: inherit;
+}
+
+aside li.out {
+    position: fixed;
+    bottom: 2.5px;
+    left: 80px;
+    font-size: 18px;
+}
