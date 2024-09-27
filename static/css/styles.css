@@ -4,6 +4,7 @@ body {
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
+    text-transform: uppercase;
 	margin: 0;
 	padding: 0;
 }
@@ -45,4 +46,8 @@ aside li.out {
     bottom: 2.5px;
     left: 80px;
     font-size: 18px;
+}
+
+aside li:hover {
+	border-bottom: 2px solid #000000;
 }

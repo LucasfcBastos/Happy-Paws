@@ -15,11 +15,10 @@ document.getElementById("animalForm").addEventListener("submit", async function 
             console.error('Erro:', data.error);
             alert('Erro: ' + data.error);
         } else {
-            alert('Animal cadastrado com sucesso!');
-            document.getElementById('animalForm').reset();
+            window.location.href = "/view";
         }
     } catch (error) {
         console.error('Erro:', error);
-        alert('Erro ao enviar os dados: ' + error);
+        alert('error in saving the animal: ' + error);
     }
 });
