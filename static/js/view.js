@@ -6,7 +6,7 @@ fetch('/animais')
         return response.json();
     })
     .then(animais => {
-        console.log('received:', animais);
+        console.log('Dados recebidos:', animais);
         const container = document.getElementById('animais-container');
         container.innerHTML = '';
         
@@ -16,7 +16,8 @@ fetch('/animais')
             animais.forEach(animal => {
                 const animalDiv = document.createElement('div');
                 animalDiv.classList.add('animal');
-
+                
+                const id = animal.ID_animal;
                 const name = animal.name;
                 const owner = animal.owner;
                 const photo = `/static/uploads/${animal.photo}`;
@@ -43,6 +44,10 @@ fetch('/animais')
                         <div class="type"><p>${types}</p></div>
                     </div>
                 `;
+
+                animalDiv.addEventListener('click', () => {
+                    window.location.href = `details?id=${id}`;
+                });
 
                 container.appendChild(animalDiv);
             });

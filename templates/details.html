@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Paws</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="static/css/styles-details.css">
+</head>
+<body>
+    <div class="form-register">
+        <form id="animalForm" enctype="multipart/form-data">
+            <div class="hr">
+                <div class="animal-img">
+                    <input type="file" id="photo" name="photo" accept="image/*" required onchange="handleFileChange(event)" required>
+                    <img id="preview" src="static/svg/placeholder.svg" alt="Image preview">
+                </div>
+                <div class="data">
+                    <div class="animal-data">
+                        <h1>DESCRIPTION OF THE ANIMAL</h1>
+                        <label>
+                            <input type="text" id="name" name="name" placeholder="NAME OF THE ANIMAL" required>
+                        </label>
+                        <label class="divider">
+                            <input type="number" id="age" name="age" placeholder="AGE IN YEARS">
+                            <select id="sex" name="sex" required>
+                                <option value="Male">MALE</option>
+                                <option value="Female">FEMALE</option>
+                                <option value="Inderfined">INDERFINED</option>
+                            </select>
+                            <input type="text" id="types" name="types" placeholder="TYPE OF ANIMAL" required>
+                        </label>
+                        <label>
+                            <input type="text" id="race" name="race" placeholder="BREED OF ANIMAL">
+                        </label>
+                    </div>
+                    <div class="animal-owner">
+                        <h1>OWNER INFORMATION</h1>
+                        <label>
+                            <input type="text" id="owner" name="owner" placeholder="OWNER'S NAME" required>
+                        </label>
+                        <label>
+                            <input type="tel" id="phone" name="phone" placeholder="PHONE">
+                            <input type="text" id="city" name="city" placeholder="CITY">
+                        </label>
+                        <label>
+                            <textarea id="address" name="address" placeholder="ADDRESS"></textarea>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="animal-description">
+                <h1>LATEST CHECK-UP</h1>
+                <label>
+                    <textarea id="description" name="description" placeholder="DESCRIPTION"></textarea>
+                </label>
+                <div class="op">
+                    <div class="updata">
+                        <p>LATEST UPDATA</p>
+                        <p class="temp"></p>
+                    </div>
+                    <div class="buttom">
+                        <button type="submit" class="save">SAVE</button>
+                        <button type="submit" class="delete">DELETE</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="static/js/form.js"></script>
+    <script src="static/js/modifiers.js"></script>
+</body>
+</html>
