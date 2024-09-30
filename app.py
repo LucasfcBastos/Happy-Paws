@@ -95,5 +95,70 @@ def get_animal(animal_id):
     except Exception as e:
         return jsonify({'error': f"error reading animal data: {str(e)}"}), 500
 
+@app.route('/animal/<int:animal_id>', methods=['PUT'])
+def update_animal(animal_id):
+    df = pd.read_excel(EXCEL_FILE)
+
+    animal = df[df['ID_animal'] == animal_id]
+    if animal.empty:
+        return jsonify({'error': 'Animal not found'}), 404
+
+    name = request.form.get('name')
+    age = request.form.get('age')
+    sex = request.form.get('sex')
+    types = request.form.get('types')
+    race = request.form.get('race')
+    owner = request.form.get('owner')
+    phone = request.form.get('phone')
+    city = request.form.get('city')
+    address = request.form.get('address')
+    description = request.form.get('description')
+
+    formatted_update = datetime.now().strftime('%d/%m/%Y - %H:%M')
+
+    old_photo_filename = animal['photo'].values[0]
+    old_photo_path = os.path.join(app.static_folder, 'uploads', old_photo_filename)
+
+    if 'photo' in request.files and request.files['photo'].filename != '':
+        photo = request.files['photo']
+        new_photo_filename = f"{name}_{datetime.now().strftime('%Y%m%d%H%M%S')}.png"
+        new_photo_path = os.path.join(app.static_folder, 'uploads', new_photo_filename)
+        photo.save(new_photo_path)
+
+        if os.path.exists(old_photo_path):
+            os.remove(old_photo_path)
+
+        df.loc[df['ID_animal'] == animal_id, 'photo'] = new_photo_filename
+    else:
+        new_photo_filename = old_photo_filename
+
+    df.loc[df['ID_animal'] == animal_id, ['name', 'age', 'sex', 'types', 'race', 'owner', 'phone', 'city', 'address', 'description', 'latest_update']] = [
+        name, age, sex, types, race, owner, phone, city, address, description, formatted_update
+    ]
+
+    df.loc[df['ID_animal'] == animal_id, 'photo'] = new_photo_filename
+
+    df.to_excel(EXCEL_FILE, index=False)
+
+    return jsonify({'status': 'success'}), 200
+
+@app.route('/animal/<int:animal_id>', methods=['DELETE'])
+def delete_animal(animal_id):
+    df = pd.read_excel(EXCEL_FILE)
+    df.fillna('', inplace=True)
+
+    animal = df[df['ID_animal'] == animal_id]
+
+    photo_filename = animal['photo'].values[0]
+    photo_path = os.path.join(app.static_folder, 'uploads', photo_filename)
+    
+    if os.path.exists(photo_path):
+        os.remove(photo_path)
+
+    df = df[df['ID_animal'] != animal_id]
+    df.to_excel(EXCEL_FILE, index=False)
+
+    return jsonify({'status': 'deleted'}), 204
+
 if __name__ == '__main__':
     app.run(debug=True)
