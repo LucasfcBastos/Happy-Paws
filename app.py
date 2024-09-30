@@ -156,6 +156,9 @@ def delete_animal(animal_id):
         os.remove(photo_path)
 
     df = df[df['ID_animal'] != animal_id]
+
+    df['ID_animal'] = range(1, len(df) + 1)
+
     df.to_excel(EXCEL_FILE, index=False)
 
     return jsonify({'status': 'deleted'}), 204
