@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "MadimiOne";
+    src: url("../assets/font/MadimiOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.light {
+    --backColor: #ffffff;
+    --textMain: #000000;
+    --textSecondary: #000000bf;
+    --textColored: #1BBCB6;
+    --textAlter: #ffffff;
+    --GrayLine: #808080;
+    --GrayColor: #f5f5f5;
+
+    --BigText: 2.559em;
+    --TitleText: 1.559em;
+    --NormalText: 1.059em;
+    --SmaillText: 0.759em;
+}
+
+.dark {
+    --backColor: #000000;
+    --textMain: #ffffff;
+    --textSecondary: #ffffffbf;
+    --textColored: #1BBCB6;
+    --textAlter: #000000;
+    --GrayLine: #808080;
+    --GrayColor: rgb(10, 10, 10);
+
+    --BigText: 2.559em;
+    --TitleText: 1.559em;
+    --NormalText: 1.059em;
+    --SmaillText: 0.759em;
+}
+
+body {
+    background-color: var(--backColor);
+    font-family: "MadimiOne";
+    margin: 0;
+}
+
+span,
+h1,
+p {
+    color: var(--textMain);
+}
+
+.textSecondary {
+    color: var(--textSecondary);
+}
+
+.textColor {
+    color: var(--textColored);
+}
+
+.textAlter {
+    color: var(--textAlter);
+}
+
+span,
+.bigText {
+    font-size: var(--BigText);
+}
+
+h1 {
+    font-size: var(--TitleText);
+}
+
+p {
+    font-size: var(--NormalText);
+}
+
+p.smail {
+    font-size: var(--SmaillText);
+}

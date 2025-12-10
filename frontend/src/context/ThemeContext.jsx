@@ -19,6 +19,10 @@ export function ThemeProvider({ children }) {
         return () => preference.removeEventListener("change", listener);
     }, []);
 
+    useEffect(() => {
+        document.body.className = theme;
+    }, [theme]);
+
     return (
         <ThemeContext.Provider value={{ theme, setTheme }}>
             <div className={theme}>{children}</div>

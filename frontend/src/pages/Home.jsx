@@ -1,14 +1,22 @@
-import { useTheme } from "../hooks/useTheme";
+import Footer from "../components/Footer";
+import "../styles/home.css"
 
 function Home() {
-    const { theme } = useTheme();
-
     return (
-        <div>
-            <h1>Dashboard</h1>
-            <p>Tema atual: {theme}</p>
-        </div>
+        <>
+            <div className="centralize">
+                <span>
+                    O MELHOR SOFTWARE DE GESTÃO VETERINÁRIO PARA O SEU <a className="textColor">PETSHOPS</a>
+                </span>
+
+                <h1 className="textSecondary">
+                    A plataforma completa para gestão veterinária. Gerencie sua empresa, equipe e pacientes em um único sistema.
+                </h1>
+            </div>
+
+            <Footer />
+        </>
     );
 }
 
-export default Home
+export default Home;
