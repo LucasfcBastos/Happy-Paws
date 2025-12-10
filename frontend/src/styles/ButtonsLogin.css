@@ -1,0 +1,19 @@
+button#login {
+    background-color: var(--backColor);
+    border-radius: 0.5em;
+    cursor: pointer;
+    border: 0em;
+    padding: 1em 2em;
+}
+
+button#login p {
+    margin: 0;
+}
+
+button#login:hover {
+    background-color: var(--textColoredTransparent);
+}
+
+button#login:hover p {
+    color: var(--textColoredAlter);
+}

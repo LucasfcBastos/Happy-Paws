@@ -1,0 +1,12 @@
+div.start {
+    width: 100%;
+    height: 100dvh;
+    align-content: center;
+    justify-items: center;
+}
+
+div.centralize {
+    text-align: center;
+    justify-items: center;
+    width: 41.5em;
+}

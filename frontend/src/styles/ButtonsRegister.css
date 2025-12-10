@@ -1,0 +1,32 @@
+button#register {
+    background-color: var(--backColor);
+    border-radius: 0.5em;
+    cursor: pointer;
+    display: flex;
+    border: 0.2em solid var(--textColored);
+    padding: 0.5em 1em;
+    align-items: center;
+}
+
+button#register h1 {
+    color: var(--textColored);
+    margin: 0em 2.5em;
+}
+
+button#register svg {
+    width: 3em;
+    height: 3em;
+    color: var(--textColored);
+}
+
+button#register:hover {
+    background-color: var(--textColored);
+}
+
+button#register:hover h1 {
+    color: var(--backColor);
+}
+
+button#register:hover svg {
+    color: var(--backColor);
+}
