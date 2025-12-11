@@ -1,8 +1,8 @@
 import NavbarLandingPage from "../components/NavbarLandingPage";
-import ButtonsRegister from "../components/ButtonsRegister";
+import ButtonImage from "../components/ButtonImage";
 import Footer from "../components/Footer";
 
-import "../styles/LandingPage.css"
+import "../styles/LandingPage.css";
 
 function LandingPage() {
     return (
@@ -19,7 +19,7 @@ function LandingPage() {
                         A plataforma completa para gestão veterinária. Gerencie sua empresa, equipe e pacientes em um único sistema.
                     </h1>
 
-                    <ButtonsRegister />
+                    <ButtonImage />
                 </div>
             </div>
             

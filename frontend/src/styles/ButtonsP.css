@@ -1,4 +1,4 @@
-button#login {
+button.Navbar.Login {
     background-color: var(--backColor);
     border-radius: 0.5em;
     cursor: pointer;
@@ -6,14 +6,14 @@ button#login {
     padding: 1em 2em;
 }
 
-button#login p {
+button.Navbar.Login p {
     margin: 0;
 }
 
-button#login:hover {
+button.Navbar.Login:hover {
     background-color: var(--textColoredTransparent);
 }
 
-button#login:hover p {
+button.Navbar.Login:hover p {
     color: var(--textColoredAlter);
 }

@@ -1,0 +1,27 @@
+.Degrad {
+    background: #82EDE9;
+    background: linear-gradient(135deg, rgba(130, 237, 233, 1) 0%, rgba(79, 213, 208, 1) 50%, rgba(11, 76, 73, 1) 100%);
+    width: calc(50% - 2em);
+    height: calc(100dvh - 2em);
+    padding: 1em;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Left {
+    left: 0px;
+}
+
+.Right {
+    right: 0px;
+}
+
+.Degrad .img {
+    text-align: center;
+}
+
+.Degrad .img img {
+    width: 20em;
+}

@@ -8,16 +8,3 @@ div.navbar {
     top: 0;
     width: calc(100% - 2em);
 }
-
-div.navbar div{
-    display: flex;
-    align-items: center;
-}
-
-div.navbar img {
-    height: var(--BigText);
-}
-
-div.navbar h1 {
-    margin: 0 0 0 0.5em;
-}

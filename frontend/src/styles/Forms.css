@@ -1,0 +1,12 @@
+.CampForms {
+    background-color: var(--backColor);
+    width: calc(50% - 10em);
+    min-height: calc(100dvh - 10em);
+    padding: 5em;
+    position: absolute;
+    align-content: center;
+}
+
+.CampForms div {
+    text-align: center;
+}

@@ -1,16 +1,17 @@
 import logotype from "../assets/img/Logotype.png"
-import ButtonsLogin from "./ButtonsLogin";
+import ButtonsP_V1 from "./ButtonsP_V1";
 
 import "../styles/navbar.css"
+import "../styles/Logotype.css"
 
 function NavbarLandingPage() {
     return (
         <div className="navbar">
-            <div>
+            <div className="logotype">
                 <img src={logotype} />
                 <h1>HAPPY PAWS</h1>
             </div>
-            <ButtonsLogin />
+            <ButtonsP_V1 />
         </div>
     );
 }

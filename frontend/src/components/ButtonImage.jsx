@@ -1,7 +1,6 @@
-import Icon from "../assets/icons/icon_1.svg";
-import "../styles/ButtonsRegister.css";
+import "../styles/ButtonImage.css";
 
-function ButtonsRegister() {
+function ButtonImage() {
     return (
         <button id="register">
             <h1>Começar Agora</h1>
@@ -15,4 +14,4 @@ function ButtonsRegister() {
     );
 }
 
-export default ButtonsRegister;
+export default ButtonImage;

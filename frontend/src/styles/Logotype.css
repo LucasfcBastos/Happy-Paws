@@ -1,0 +1,12 @@
+div.logotype {
+    display: flex;
+    align-items: center;
+}
+
+div.logotype img {
+    height: var(--BigText);
+}
+
+div.logotype h1 {
+    margin: 0 0 0 0.5em;
+}

@@ -1,0 +1,22 @@
+button.btn {
+    background-color: var(--textColored);
+    border: 0em;
+    border-radius: var(--BorderOne);
+    cursor: pointer;
+}
+
+button.btn h1 {
+    color: white;
+}
+
+button.btn:hover {
+    background-color: var(--textColoredAlter);
+}
+
+button.W100 {
+    width: 100%;
+}
+
+button.Wpersona {
+    width: 25em;
+}

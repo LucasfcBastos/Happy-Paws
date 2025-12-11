@@ -1,6 +1,6 @@
 button#register {
     background-color: var(--backColor);
-    border-radius: 0.5em;
+    border-radius: var(--BorderOne);
     cursor: pointer;
     display: flex;
     border: 0.2em solid var(--textColored);
@@ -23,10 +23,7 @@ button#register:hover {
     background-color: var(--textColored);
 }
 
-button#register:hover h1 {
-    color: var(--backColor);
-}
-
+button#register:hover h1,
 button#register:hover svg {
-    color: var(--backColor);
+    color: white;
 }
