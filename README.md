@@ -1,35 +1,52 @@
-# Happy Paws!
+# Happy Paws - Gestão de Clínicas Odontológicas
 
-Hello, welcome **Happy Paws**, a system for you who have a veterinary clinic and need a simple and practical system to register the animals you consult and analyze the last check-up that was given to the animal, **Happy Paws** is here to help you.
+Plataforma completa para gestão de clínicas odontológicas. Gerencie sua clínica, equipe e pacientes em um único sistema inteligente.
 
+## 🚀 Como Inicializar o Projeto
 
-## How to run?
+### Pré-requisitos
 
-1. To run the code, you need to download all the necessary files and folders from the website
+- Instalar Node.js v24.11.1 (ou superior) - [Baixar Node.js](https://nodejs.org/en/download)
+- Instalar Laragon v8.4.0 - [Baixar Laragon](https://laragon.org/download)
 
-2. Open and run the python code **app.py** and click on the link http://localhost:8000
+### Passos para Inicializar
 
-3. In the link, add **/view**.
+**Passo 1 - Iniciar o React:**
+```bash
+npm run dev
+```
+(ou `npm.cmd run dev` se estiver no PowerShell sem permissões)
 
-## Features
+**Passo 2 - Acessar o projeto:**
 
- - Register animals
+Abra seu navegador e acesse: `http://localhost:8080`
 
- - View registered animals
+## 📁 Estrutura do Projeto
 
- - View details of registered animals
+```
+HAPPY-PAWS/
+├── backend/
+│   └── 
+└── backend/
+    ├── src/
+    │   ├── components/     # Componentes reutilizáveis
+    │   ├── pages/          # Páginas da aplicação
+    │   ├── layouts/        # Layouts das páginas
+    │   ├── hooks/          # Custom hooks
+    │   └── lib/            # Utilitários
+    ├── public/             # Arquivos estáticos
+    └── package.json        # Dependências do projeto
+```
 
- - Save the animal's updates
+## 🛠️ Technologies applied
 
- - Delete the animal you want
+#### Front-end
+<img align="center" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
+<img align="center" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
 
-## Technologies applied
+#### Back-end
+<img align="center" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg">
+<img align="center" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-original.svg">
 
-  #### Programming languages
-  <img align="center" height="30" width="40" src="https://user-images.githubusercontent.com/84246094/134066180-d11880e0-f92f-47da-9f70-1b5d7c39934b.png">
-  <img align="center" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt ="CSS3">
-  <img align="center" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
-  <img align="center" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
-  
-  #### Databases
-  <img align="center" height="30" width="33" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Microsoft_Excel_2013-2019_logo.svg/1200px-Microsoft_Excel_2013-2019_logo.svg.png">
+#### Databases
+<img align="center" height="30" width="33" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg">
