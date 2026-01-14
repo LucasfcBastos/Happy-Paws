@@ -1,4 +1,4 @@
-import NavbarLandingPage from "../../components/NavbarLandingPage";
+import NavbarLandingPage from "../../components/Bar/NavbarLandingPage";
 import ButtonImage from "../../components/Buttons/ButtonImage";
 import Footer from "../../components/Footer";
 

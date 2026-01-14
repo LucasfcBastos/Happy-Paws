@@ -1,0 +1,38 @@
+.sidebar {
+    position: fixed;
+    background-color: var(--ColorTheme);
+    height: 100%;
+    border-right: 0.15em solid var(--ColorLine);
+}
+
+.sidebar .logotype {
+  padding: 1.5em;
+  border-bottom: 0.15em solid var(--ColorLine);
+}
+
+.sidebar aside {
+  padding: 1.5em;
+}
+
+.sidebar button {
+  display: flex;
+  padding: 1em;
+  border-radius: var(--BorderOne);
+  width: 100%;
+  border: 0em;
+  align-items: center;
+  margin-bottom: 1.5em;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.sidebar button .icon {
+  width: 2em;
+  height: 2em;
+  color: var(--ColorTextQ3);
+}
+
+.sidebar button p {
+  margin: 0em 0em 0em 0.5em;
+  color: var(--ColorTextQ3);
+}

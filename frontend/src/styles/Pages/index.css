@@ -7,9 +7,8 @@
 
 :root {
     --ColorPrimaria: #1BBCB6;
-    --ColorPrimariaQ1: hsla(178, 75%, 42%, 0.250);
-    --ColorPrimariaQ2: hsla(178, 75%, 42%, 0.500);
-    --WHAT: #FF0000;
+    --ColorPrimariaQ1: #1bbbb640;
+    --ColorPrimariaQ2: #1bbbb680;
 
     --BigText: 2.559em;
     --TitleText: 1.559em;
@@ -23,6 +22,7 @@
 .light {
     --ColorTheme: #F8F9FA;
     --ColorText: #000000;
+    --ColorTextQ3: #000000bf;
     --ColorInpu: #D9D9D9;
     --ColorLine: #999999;
     --ColorGray: #BCBCBD;
@@ -33,6 +33,7 @@
 .dark {
     --ColorTheme: #1A1D20;
     --ColorText: #ffffff;
+    --ColorTextQ3: #ffffffbf;
     --ColorInpu: #262626;
     --ColorLine: #666666;
     --ColorGray: #4D4E50;

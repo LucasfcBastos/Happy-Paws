@@ -1,8 +1,8 @@
-import logotype from "../assets/img/Logotype.png"
-import ButtonsP_V1 from "./Buttons/ButtonsP_V1";
+import logotype from "../../assets/img/Logotype.png"
+import ButtonsP_V1 from "../Buttons/ButtonsP_V1";
 
-import "../styles/Pages/Navbar.css"
-import "../styles/Logotype.css"
+import "../../styles/Pages/Navbar.css"
+import "../../styles/Logotype.css"
 
 function NavbarLandingPage() {
     return (
