@@ -1,5 +1,5 @@
-import ArtDegrad from "../components/ArtDegrad";
-import FormRegistration from "../components/FormRegistration";
+import ArtDegrad from "../../components/ArtDegrad";
+import FormRegistration from "../../components/Forms/FormRegistration";
 
 function RegistrationPage() {
     return (

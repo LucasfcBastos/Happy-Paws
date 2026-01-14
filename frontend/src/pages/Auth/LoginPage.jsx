@@ -1,5 +1,5 @@
-import ArtDegrad from "../components/ArtDegrad";
-import FormLogin from "../components/FormLogin";
+import ArtDegrad from "../../components/ArtDegrad";
+import FormLogin from "../../components/Forms/FormLogin";
 
 function LoginPage() {
     return (

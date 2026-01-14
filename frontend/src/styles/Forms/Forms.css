@@ -1,5 +1,5 @@
 .CampForms {
-    background-color: var(--backColor);
+    background-color: var(--ColorTheme);
     width: calc(50% - 10em);
     min-height: calc(100dvh - 10em);
     padding: 5em;

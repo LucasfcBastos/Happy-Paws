@@ -11,13 +11,24 @@ Plataforma completa para gestão de clínicas odontológicas. Gerencie sua clín
 
 ### Passos para Inicializar
 
-**Passo 1 - Iniciar o React:**
+**Passo 1 - Arrumar arquivo .env:**
 ```bash
 npm run dev
 ```
 (ou `npm.cmd run dev` se estiver no PowerShell sem permissões)
 
-**Passo 2 - Acessar o projeto:**
+**Passo 3 - Iniciar o Laravel:**
+```bash
+php artisan serve
+```
+
+**Passo 2 - Iniciar o React:**
+```bash
+npm run dev
+```
+(ou `npm.cmd run dev` se estiver no PowerShell sem permissões)
+
+**Passo 3 - Acessar o projeto:**
 
 Abra seu navegador e acesse: `http://localhost:8080`
 
@@ -26,16 +37,17 @@ Abra seu navegador e acesse: `http://localhost:8080`
 ```
 HAPPY-PAWS/
 ├── backend/
-│   └── 
-└── backend/
-    ├── src/
-    │   ├── components/     # Componentes reutilizáveis
-    │   ├── pages/          # Páginas da aplicação
-    │   ├── layouts/        # Layouts das páginas
-    │   ├── hooks/          # Custom hooks
-    │   └── lib/            # Utilitários
-    ├── public/             # Arquivos estáticos
-    └── package.json        # Dependências do projeto
+│   └── app/
+└── frontend/
+    └── src/
+        ├── assets/     # Armazena arquivos estáticos.
+        ├── components/ # Componentes reutilizáveis da interface.
+        ├── context/    # Gerencia estados globais com React Context API.
+        ├── hooks/      # Hooks próprios para reutilizar lógica entre componentes.
+        ├── pages/      # Página inteira da aplicação, acessada pelas rotas.
+        ├── routes/     # Gerencia toda a navegação da aplicação.
+        ├── services/   # Responsável pela comunicação com o backend (Laravel).
+        └── styles/     # uso de CSS Modules, Tailwind configs, variáveis.
 ```
 
 ## 🛠️ Technologies applied

@@ -1,4 +1,4 @@
-import "../styles/ButtonsH1.css";
+import "../../styles/Buttons/ButtonsH1.css";
 
 function ButtonsH1({ text, w }) {
     return (

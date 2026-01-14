@@ -1,7 +1,7 @@
 import logotype from "../assets/img/LogotypeDark.png";
 import imgVeterinary from "../assets/img/Veterinary.png";
 
-import "../styles/Gradient.css";
+import "../styles/Forms/Gradient.css";
 import "../styles/Logotype.css";
 
 function ArtDegrad({ type }) {

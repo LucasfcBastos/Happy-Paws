@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import "../styles/ButtonsP.css"
+import "../../styles/Buttons/ButtonsP.css"
 
 function ButtonsP_V1() {
     const navigate = useNavigate();
@@ -11,7 +11,7 @@ function ButtonsP_V1() {
     
     return (
         <button className="Navbar Login" onClick={login}>
-            <p>Login</p>
+            <p className="">Login</p>
         </button>
     );
 }

@@ -1,8 +1,8 @@
-import NavbarLandingPage from "../components/NavbarLandingPage";
-import ButtonImage from "../components/ButtonImage";
-import Footer from "../components/Footer";
+import NavbarLandingPage from "../../components/NavbarLandingPage";
+import ButtonImage from "../../components/Buttons/ButtonImage";
+import Footer from "../../components/Footer";
 
-import "../styles/LandingPage.css";
+import "../../styles/Pages/LandingPage.css"
 
 function LandingPage() {
     return (
@@ -15,7 +15,7 @@ function LandingPage() {
                         O MELHOR SOFTWARE DE GESTÃO VETERINÁRIO PARA O SEU <a className="textColor">PETSHOPS</a>
                     </span>
 
-                    <h1 className="textSecondary">
+                    <h1 className="third_quartile">
                         A plataforma completa para gestão veterinária. Gerencie sua empresa, equipe e pacientes em um único sistema.
                     </h1>
 

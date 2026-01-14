@@ -1,5 +1,5 @@
 label {
-    color: var(--textMain);
+    color: var(--ColorText);
     font-size: var(--NormalText);
     display: flex;
     flex-direction: column;
@@ -9,11 +9,11 @@ input {
     background-color: white;
     font-size: calc(var(--NormalText) - 0.1em);
     border-radius: var(--BorderOne);
-    border: 0.15em solid var(--GrayLine);
+    border: 0.15em solid var(--ColorInpu);
     padding: 0.25em 0.5em;
     margin: 0.5em 0em 1em 0em;
 }
 
 input:focus {
-    box-shadow: 0 0 0 0.2em var(--textColored);
+    box-shadow: 0 0 0 0.2em var(--ColorPrimaria);
 }

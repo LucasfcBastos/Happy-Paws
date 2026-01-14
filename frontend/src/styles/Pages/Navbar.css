@@ -1,6 +1,6 @@
 div.navbar {
-    background-color: var(--backColor);
-    border-bottom: 0.15em solid var(--GrayLine);
+    background-color: var(--ColorTheme);
+    border-bottom: 0.15em solid var(--ColorLine);
     display: flex;
     justify-content: space-between;
     padding: 1em;

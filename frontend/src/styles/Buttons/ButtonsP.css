@@ -1,5 +1,5 @@
 button.Navbar.Login {
-    background-color: var(--backColor);
+    background-color: var(--ColorTheme);
     border-radius: 0.5em;
     cursor: pointer;
     border: 0em;
@@ -11,9 +11,9 @@ button.Navbar.Login p {
 }
 
 button.Navbar.Login:hover {
-    background-color: var(--textColoredTransparent);
+    background-color: var(--ColorPrimariaQ1);
 }
 
 button.Navbar.Login:hover p {
-    color: var(--textColoredAlter);
+    color: var(--ColorPrimariaTheme);
 }

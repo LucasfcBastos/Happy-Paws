@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import "../styles/ButtonImage.css";
+import "../../styles/Buttons/ButtonImage.css";
 
 function ButtonImage() {
     const navigate = useNavigate();

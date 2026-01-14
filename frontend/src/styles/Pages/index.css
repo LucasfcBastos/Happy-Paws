@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "MadimiOne";
+    src: url("../../assets/font/MadimiOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --ColorPrimaria: #1BBCB6;
+    --ColorPrimariaQ1: hsla(178, 75%, 42%, 0.250);
+    --ColorPrimariaQ2: hsla(178, 75%, 42%, 0.500);
+    --WHAT: #FF0000;
+
+    --BigText: 2.559em;
+    --TitleText: 1.559em;
+    --NormalText: 1.059em;
+    --SmaillText: 0.759em;
+
+    --BorderOne: 0.509em;
+    --BorderTwo: 0.259em;
+}
+
+.light {
+    --ColorTheme: #F8F9FA;
+    --ColorText: #000000;
+    --ColorInpu: #D9D9D9;
+    --ColorLine: #999999;
+    --ColorGray: #BCBCBD;
+    --ColorPrimariaTheme: #0B4C49;
+    --ColorPrimariaBack: #F5FFFF;
+}
+
+.dark {
+    --ColorTheme: #1A1D20;
+    --ColorText: #ffffff;
+    --ColorInpu: #262626;
+    --ColorLine: #666666;
+    --ColorGray: #4D4E50;
+    --ColorPrimariaTheme: #9AB2B2;
+    --ColorPrimariaBack: #111717;
+}
+
+body {
+    background-color: var(--ColorTheme);
+    font-family: "MadimiOne";
+    margin: 0;
+}
+
+button,
+input {
+    font-family: "MadimiOne";
+}
+
+span,
+h1,
+p {
+    color: var(--ColorText);
+}
+
+.zero_quartile {
+    opacity: 0;
+}
+
+.first_quartile {
+    opacity: 0.25;
+}
+
+.second_quartile {
+    opacity: 0.50;
+}
+
+.third_quartile {
+    opacity: 0.75;
+}
+
+.textColor {
+    color: var(--ColorPrimaria);
+}
+
+span {
+    font-size: var(--BigText);
+}
+
+h1 {
+    font-size: var(--TitleText);
+}
+
+p {
+    font-size: var(--NormalText);
+}
+
+p.smail {
+    font-size: var(--SmaillText);
+}

@@ -1,6 +1,6 @@
 .Degrad {
-    background: #82EDE9;
-    background: linear-gradient(135deg, rgba(130, 237, 233, 1) 0%, rgba(79, 213, 208, 1) 50%, rgba(11, 76, 73, 1) 100%);
+    background: #1BBCB6;
+    background: linear-gradient(135deg, #1BBCB6 0%, #0B4C49 100%);
     width: calc(50% - 2em);
     height: calc(100dvh - 2em);
     padding: 1em;

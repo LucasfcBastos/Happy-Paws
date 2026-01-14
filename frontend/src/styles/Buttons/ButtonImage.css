@@ -1,26 +1,26 @@
 button#register {
-    background-color: var(--backColor);
+    background-color: var(--ColorTheme);
     border-radius: var(--BorderOne);
     cursor: pointer;
     display: flex;
-    border: 0.2em solid var(--textColored);
+    border: 0.2em solid var(--ColorPrimaria);
     padding: 0.5em 1em;
     align-items: center;
 }
 
 button#register h1 {
-    color: var(--textColored);
+    color: var(--ColorPrimaria);
     margin: 0em 2.5em;
 }
 
 button#register svg {
     width: 3em;
     height: 3em;
-    color: var(--textColored);
+    color: var(--ColorPrimaria);
 }
 
 button#register:hover {
-    background-color: var(--textColored);
+    background-color: var(--ColorPrimaria);
 }
 
 button#register:hover h1,

@@ -1,16 +1,16 @@
 button.btn {
-    background-color: var(--textColored);
+    background-color: var(--ColorPrimaria);
     border: 0em;
     border-radius: var(--BorderOne);
     cursor: pointer;
 }
 
 button.btn h1 {
-    color: white;
+    color: var(--ColorTheme);
 }
 
 button.btn:hover {
-    background-color: var(--textColoredAlter);
+    background-color: var(--ColorPrimariaTheme);
 }
 
 button.W100 {

@@ -1,7 +1,8 @@
-import ButtonsH1V2 from "./ButtonsH1"
+import ButtonsH1V2 from "../Buttons/ButtonsH1"
+import LinkRedirect from "../LinkRedirect"
 
-import "../styles/Forms.css";
-import "../styles/Input.css";
+import "../../styles/Forms/Forms.css";
+import "../../styles/Forms/Input.css";
 
 function FormLogin() {
     return (
@@ -31,6 +32,7 @@ function FormLogin() {
                     />
                 </label>
                 <ButtonsH1V2 text="Fazer Login" w="W100" />
+                <LinkRedirect text1="Não possui cadastro?" text2="VAMOS CADASTRAR" link="/registration"/>
             </div>
         </>
     );
