@@ -5,6 +5,10 @@
     border-right: 0.15em solid var(--ColorLine);
 }
 
+.sidebar .link {
+  text-decoration: none;
+}
+
 .sidebar .logotype {
   padding: 1.5em;
   border-bottom: 0.15em solid var(--ColorLine);
@@ -21,18 +25,43 @@
   width: 100%;
   border: 0em;
   align-items: center;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.25em;
   background-color: transparent;
   cursor: pointer;
 }
 
 .sidebar button .icon {
-  width: 2em;
-  height: 2em;
-  color: var(--ColorTextQ3);
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .sidebar button p {
   margin: 0em 0em 0em 0.5em;
+}
+
+.sidebar button.noneSelect {
+  background-color: transparent;
+}
+
+.sidebar button.noneSelect:hover {
+  background-color: var(--ColorTextQ2);
+}
+
+.sidebar button.noneSelect .icon,
+.sidebar button.noneSelect p {
   color: var(--ColorTextQ3);
+}
+
+.sidebar button.noneSelect:hover .icon,
+.sidebar button.noneSelect:hover p {
+  color: var(--ColorText);
+}
+
+.sidebar button.select {
+  background-color: var(--ColorPrimariaQ2);
+}
+
+.sidebar button.select .icon,
+.sidebar button.select p {
+  color: var(--ColorPrimariaTheme);
 }

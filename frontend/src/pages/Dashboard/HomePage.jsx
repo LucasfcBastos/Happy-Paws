@@ -5,7 +5,7 @@ function HomePage() {
     return (
         <>
             <Navbar />
-            <Sidebar />
+            <Sidebar select="Home" />
         </>
     );
 }
